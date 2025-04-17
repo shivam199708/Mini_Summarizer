@@ -1,7 +1,7 @@
 from app.summarizer import summarize_text
 
-def test_summary_output():
-    input_text = "Python is a widely used programming language known for its readability."
+def test_summarization():
+    input_text = "Machine learning is a subset of artificial intelligence that gives computers the ability to learn without being explicitly programmed."
     summary = summarize_text(input_text)
     assert isinstance(summary, str)
     assert len(summary) > 0
